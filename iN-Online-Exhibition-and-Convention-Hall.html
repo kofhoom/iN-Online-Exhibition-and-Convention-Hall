@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>iN Online Exhibition Convention Hall</title>
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/favicon_32x32.png" type="image/x-icon"/>
+	<link rel="icon" href="img/favicon_32x32.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <!-- maininput 2021 1/20 김준수-->
+    <section class="login-from">
+        <h1>Login <span class="tt1">Sign up</span></h1>
+        <form action="">
+            <!--form action 연동으로 데이터 전송 가능 -->
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">Email</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">Password</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="check" id="cb1" autocomplete="off" required>
+                <label for="cb1"></label><span class="tt2">Keep me login</span>
+            </div>
+            <div class="btn-area">
+                <button id="btn" type="submit">Login
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+    <script>
+        //inputclick addclass 2021 김준수
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+
+        $(btn).on('click', function() {
+            if ($(id).val() == "") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning')
+                }, 1500)
+            } else if ($(pw).val() == "") {
+                $(pw).next('label').addClass('warning');
+            };
+        })
+    </script>
+</body></html>

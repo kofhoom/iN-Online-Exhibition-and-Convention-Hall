@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    background: url(../img/mainimg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*input from 2021 1/20 김준수*/
+.login-from {
+    position: relative;
+    z-index: 2;
+    top: 14%;
+    left: 14.3%;
+    height: 300px;
+    width: 400px;
+}
+
+.login-from::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    width: 600px;
+    height: 400px;
+    background: black;
+    z-index: -1;
+    border-radius: 4px;
+    right: 50%;
+    top: 50%;
+    margin-right: -300px;
+    margin-top: -200px;
+}
+
+.login-from h1 {
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.tt1 {
+    color: #cccccc;
+    margin-left: 10px;
+}
+
+
+.int-area {
+    width: 400px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.int-area:first-child {
+    margin-top: 0;
+}
+
+.int-area input {
+    width: 100%;
+    padding: 20px 0 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+
+}
+
+.int-area label {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    font-size: 18px;
+    color: #999;
+    transition: all .5s ease;
+}
+
+.int-area label.warning {
+    color: red !important;
+    animation: warning .3s ease;
+    animation-iteration-count: 3;
+}
+
+@keyframes warning {
+    0% {
+        transform: translateX(-8px);
+    }
+
+    25% {
+        transform: translateX(8px);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+
+    75% {
+        transform: translateX(8px);
+    }
+}
+
+.int-area input:focus + label,
+.int-area input:valid + label {
+    top: -2px;
+    font-size: 13px;
+    color: #0baee8;
+}
+
+
+.btn-area button {
+    width: 100%;
+    height: 35px;
+    background: #0baee8;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tt2 {
+    font-weight: bold;
+    font-size: 17px;
+    color: #cccccc;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*checkbox 2021 1/20 김준수*/
+
+.checkbox {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+
+}
+
+input[id="cb1"] + label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #bcbcbc;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+}
+
+input[id="cb1"]:checked + label {
+    background-color: #666666;
+}
+
+input[id="cb1"] {
+    display: none;
+}
