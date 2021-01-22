@@ -162,3 +162,15 @@ input[id="cb1"]:checked + label {
 input[id="cb1"] {
     display: none;
 }
+
+form {
+    display: block;
+}
+
+.newid {
+    position: relative;
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    z-index: 58;
+}
