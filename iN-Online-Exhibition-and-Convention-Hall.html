@@ -36,6 +36,7 @@
             </div>
 
         </form>
+        <!--ㅣogin 2021 1/20 김준수-->
         <div class="newid">
             <span>환영합니다. MASTER님</span>
 
@@ -60,11 +61,11 @@
         let logout = $('.logout');
 
 
-
+        //이벤트 방지 2021 김준수
         $(bbb).on('click', function(e) {
             e.preventDefault();
         });
-//id pw 전송
+        //id pw 전송
         $(btn).on('click', function() {
             if ($(id).val() == "") {
                 $(id).next('label').addClass('warning');

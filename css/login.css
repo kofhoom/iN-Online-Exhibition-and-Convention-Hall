@@ -160,15 +160,16 @@ input[id="cb1"]:checked + label {
 }
 
 input[id="cb1"] {
-display: none;
+    display: none;
 }
 
 form {
     display: block;
 }
+
 .newid {
-   border: 3px solid #fff;
-        display: none;
+    border: 3px solid #fff;
+    display: none;
     font-size: 15px;
     color: #fff;
     top: 50%;
@@ -177,11 +178,12 @@ form {
     height: 100px;
     margin-top: -50px;
     text-align: center;
-    
+
 }
+
 .newid span {
-line-height: 100px;
-vertical-align: middle;
+    line-height: 100px;
+    vertical-align: middle;
 
 }
 
@@ -193,23 +195,21 @@ vertical-align: middle;
     position: absolute;
     top: 50%;
     margin-top: -50px;
-    right:  -20px;
+    right: -20px;
     z-index: 1111;
     display: none;
 }
-
-
-
 
 .logout {
     position: absolute;
     bottom: 0;
     right: 0;
     display: none;
-cursor: pointer;
+    cursor: pointer;
     font-size: 18px;
     color: #cccccc;
 }
+
 .logout:hover {
     color: #0baee8;
     transition: all 0.5s;
